@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/variable.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <title>Formulário de Cartão de Crédito</title>
+  </head>
+  <body>
+    <main>
+      <section class="cards">
+        <div class="card front-card">
+          <div class="detail">
+            <img src="src/img/card-logo.svg" alt="" />
+          </div>
+          <div class="info-card">
+            <p>0000 0000 0000 0000</p>
+            <div class="name-date">
+              <p>JANE APPLESSED</p>
+              <p>00/00</p>
+            </div>
+          </div>
+        </div>
+        <div class="card back-card">
+          <p>000</p>
+        </div>
+      </section>
+      <section class="wrapper-info">
+        <form class="form ">
+          <div class="content-form">
+            <label for="name">CARDHOLDER NAME</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="e.g. Jane Applessed"
+            />
+            <small>Error</small>
+          </div>
+
+          <div class="content-form">
+            <label for="number">CARD NUMBER</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="e.g. 0000 0000 0000 0000"
+            />
+            <small>Error</small>
+          </div>
+
+          <div class="venc-cvc">
+            <div class="venc">
+              <label for="venc">EXP. DATE (MM/YY)</label>
+              <div class="month-year">
+                <input type="number" name="month" id="month" placeholder="MM" />
+                <input type="number" name="year" id="year" placeholder="YY" />
+              </div>
+              <small>Error</small>
+            </div>
+            <div class="cvc">
+              <label for="cvc">CVC</label>
+              <input type="number" name="cvc" id="cvc" placeholder="cvc" />
+              <small>Error</small>
+            </div>
+          </div>
+
+          <div class="btn">
+            <input type="button" value="Confirm" />
+          </div>
+        </form>
+
+        <div class="thanks visibility">
+          <img src="src/img/icon-complete.svg" alt="check" />
+          <h2>THANK YOU</h2>
+          <p>Thank you! We've added your card details</p>
+          <input type="button" value="Continue" />
+        </div>
+      </section>
+    </main>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

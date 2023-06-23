@@ -1,0 +1,9 @@
+:root {
+  --bg-hidden: #ad518d;
+  --error: hsl(0, 100%, 66%);
+  --light: hsl(0, 0%, 100%);
+  --bg-border: hsl(270, 3%, 87%);
+  --border-input: hsl(279, 6%, 55%);
+  --button-bg: hsl(278, 68%, 11%);
+  --fs: 1.8rem;
+}
