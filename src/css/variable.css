@@ -6,4 +6,9 @@
   --border-input: hsl(279, 6%, 55%);
   --button-bg: hsl(278, 68%, 11%);
   --fs: 1.8rem;
+  --gradient-border: linear-gradient(
+    to right,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  )1;
 }

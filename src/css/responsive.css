@@ -1,6 +1,92 @@
-@media(max-width:1097px){
-    main{
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 1097px) {
+  body {
+    background-image: url(../img/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    padding-top: 10rem;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .front-card {
+    z-index: 1000;
+    margin-top: 6rem;
+    margin-left: 2rem;
+  }
+
+  .back-card {
+    margin-top: -40rem;
+  }
+
+  .wrapper-info {
+    padding-top: 15rem;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+
+  .card {
+    width: 31rem;
+    height: 19rem;
+    
+  }
+
+  
+
+  .front-card {
+    margin: 15rem 0 0 -2rem;
+  }
+
+  .back-card {
+    background-size: 100% 100%;
+    margin-top: -31.8rem;
+    margin-left: 1rem;
+  }
+
+  .detail img{
+    width: 5rem;
+  }
+
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+ 
+  .info-card p {
+    font-size: 2rem;
+    
+  }
+
+  .name-date p {
+    font-size: 1rem;
+  }
+
+  .wrapper-info {
+    width: 100%;
+  }
+
+  .content-form input,
+  .thanks input,
+  .btn input{
+    width: 30rem;
+  }
+
+  .venc-cvc input {
+    width: 9.7rem;
+  }
+
+  .thanks{
+    margin-left: 1rem;
+  }
 }

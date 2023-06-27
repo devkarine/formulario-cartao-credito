@@ -29,22 +29,17 @@
         </div>
       </section>
       <section class="wrapper-info">
-        <form class="form ">
+        <form class="form">
           <div class="content-form">
             <label for="name">CARDHOLDER NAME</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="e.g. Jane Applessed"
-            />
+            <input type="text" name="name" id="name" placeholder="e.g. Jane Applessed"/>
             <small>Error</small>
           </div>
 
           <div class="content-form">
             <label for="number">CARD NUMBER</label>
             <input
-              type="number"
+              type="text"
               name="number"
               id="number"
               placeholder="e.g. 0000 0000 0000 0000"
@@ -56,14 +51,15 @@
             <div class="venc">
               <label for="venc">EXP. DATE (MM/YY)</label>
               <div class="month-year">
-                <input type="number" name="month" id="month" placeholder="MM" />
-                <input type="number" name="year" id="year" placeholder="YY" />
+                <input type="text" name="month" id="month" placeholder="MM" />
+                <input type="text" name="year" id="year" placeholder="YY" />
               </div>
               <small>Error</small>
             </div>
             <div class="cvc">
               <label for="cvc">CVC</label>
-              <input type="number" name="cvc" id="cvc" placeholder="cvc" />
+
+              <input type="text" name="cvc" id="cvc" placeholder="cvc" />
               <small>Error</small>
             </div>
           </div>

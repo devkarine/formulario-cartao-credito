@@ -10,17 +10,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--fs);
   min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
   background-image: url(../img/bg-main-desktop.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 30% 100%;
 }
 
 main {
   display: flex;
+  gap: 5rem;
   
 }
 
@@ -29,18 +29,16 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  /* background-image: url(../img/bg-main-desktop.png);
-  background-repeat: no-repeat;
-  background-size: contain; */
-  max-width: 60rem;
-  min-height: 100vh;
+  
+  
+
 }
 
 .card {
   color: var(--light);
-  background-size: contain;
   border-radius: 1rem;
-  width: 44.7rem;
+  max-width: 44.7rem;
+  width: 100%;
   height: 24.5rem;
   padding: 2rem;
 }
@@ -107,13 +105,11 @@ main {
   padding: 0.9rem;
 }
 
-.form .content-form {
+.content-form {
   width: 36rem;
 }
 
 .form input:focus {
-  border-width: 0.2rem;
-  border-style: solid;
   border-image: var(--gradient-border);
 }
 
@@ -129,7 +125,7 @@ main {
 .btn input,
 .thanks input {
   color: var(--light);
-  width: 100%;
+  width: 36rem;
   background-color: var(--button-bg);
   cursor: pointer;
   transition: 0.3s ease-in-out;
