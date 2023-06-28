@@ -109,9 +109,7 @@ main {
   width: 36rem;
 }
 
-.form input:focus {
-  border-image: var(--gradient-border);
-}
+
 
 .venc-cvc {
   display: flex;
@@ -170,6 +168,10 @@ small {
 
 .error {
   visibility: visible;
+  
+}
+.correct.form input:focus {
+  border-image: var(--gradient-border);
 }
 
 .visibility {

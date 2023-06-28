@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/variable.css" />
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/responsive.css" />
     <title>Formulário de Cartão de Crédito</title>
   </head>
   <body>
@@ -32,7 +32,12 @@
         <form class="form">
           <div class="content-form">
             <label for="name">CARDHOLDER NAME</label>
-            <input type="text" name="name" id="name" placeholder="e.g. Jane Applessed"/>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="e.g. Jane Applessed"
+            />
             <small>Error</small>
           </div>
 
@@ -65,7 +70,7 @@
           </div>
 
           <div class="btn">
-            <input type="button" value="Confirm" />
+            <input id="btn-confirm" type="button" value="Confirm" />
           </div>
         </form>
 
@@ -73,7 +78,7 @@
           <img src="src/img/icon-complete.svg" alt="check" />
           <h2>THANK YOU</h2>
           <p>Thank you! We've added your card details</p>
-          <input type="button" value="Continue" />
+          <input id="btn-continue" type="button" value="Continue" />
         </div>
       </section>
     </main>
