@@ -43,6 +43,10 @@ main {
   padding: 2rem;
 }
 
+#card-number{
+  width: 33rem;
+}
+
 .front-card {
   background: url(../img/bg-card-front.png) no-repeat;
 }
@@ -87,11 +91,19 @@ main {
   margin-left: 17rem;
 }
 
-.form .content-form,
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.content-form,
 .venc,
 .cvc {
   display: flex;
   flex-direction: column;
+  
 }
 
 .form label {
@@ -103,6 +115,10 @@ main {
   border: 0.1rem solid var(--border-input);
   border-radius: 0.6rem;
   padding: 0.9rem;
+}
+
+.form input:focus {
+  border-image: var(--gradient-border);
 }
 
 .content-form {
@@ -170,9 +186,9 @@ small {
   visibility: visible;
   
 }
-.correct.form input:focus {
-  border-image: var(--gradient-border);
-}
+
+
+
 
 .visibility {
   display: none;
