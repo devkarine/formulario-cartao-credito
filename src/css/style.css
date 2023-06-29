@@ -182,13 +182,9 @@ small {
   );
 }
 
-.error {
+.error{
   visibility: visible;
-  
 }
-
-
-
 
 .visibility {
   display: none;
