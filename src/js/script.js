@@ -113,10 +113,13 @@ function formatCardNumber(value) {
 
 function limitCardNumber() {
   const maxDigits = 16;
-  let formattedValue = numberClient.value.replace(/\D/g, "").slice(0, maxDigits);
+  let formattedValue = numberClient.value
+    .replace(/\D/g, "")
+    .slice(0, maxDigits);
   const formattedNumber = formatCardNumber(formattedValue);
   numberClient.value = formattedNumber;
-  numberCard.textContent = formattedNumber !== "" ? formattedNumber : "0000 0000 0000 0000";
+  numberCard.textContent =
+    formattedNumber !== "" ? formattedNumber : "0000 0000 0000 0000";
 }
 
 function insertDataVenc() {
@@ -161,7 +164,7 @@ yearVenc.addEventListener("input", handleYearInput);
 
 cvc.addEventListener("input", () => {
   const cvcValue = cvc.value;
-  numberCvc.innerText = cvcValue.slice(0, 3); 
+  numberCvc.innerText = cvcValue.slice(0, 3);
 });
 
 cvc.addEventListener("input", () => {

@@ -1,30 +1,27 @@
-
 # 🖥️ Formulário de Cartão de Crédito
 
-
 ## 📜 Descrição
+
 Projeto realizado com o objetivo de criar um fomulário de preenchimento de cartão de crédito que conforme a pessoa envia o formulário, aparece do lado uma simulação no desenho do cartão de crédito na tela, para que a pessoa confirme. Logo após aparece uma página de agradecimento.
 
-
-
 ## ✍️ Processo
+
 - Marcação semântica HTML5
 - Propriedades personalizadas de CSS3
 - JavaScript
-- Flexbox  
+- Flexbox
 - Design responsivo
 - Validação de Formulário
 - Espelho de informações
 
-
-
 ## 🖱️ A página
-<img src="src/img/mobile.gif" alt="Gif exibindo uma demonstração do site">    
 
-> <a href="https://devkarine.github.io/formulario-cartao-credito/" target= "_blank">Acesse a página online</a>  
+<img src="src/img/mobile.gif" alt="Gif exibindo uma demonstração do site">
 
+> <a href="https://devkarine.github.io/formulario-cartao-credito/" target= "_blank">Acesse a página online</a>
 
 ## 👩‍💻 Dev
+
 <table align="center">
   <tr>
     <td align="center">
