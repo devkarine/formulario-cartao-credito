@@ -18,7 +18,7 @@ function validateName() {
   const name = nameClient.value.trim();
   if (name === "") {
     error[0].classList.add("error");
-    error[0].innerText = "Can't be blank";
+    error[0].innerText = "Type a valid value";
     nameClient.style.border = "1px solid red";
     return false;
   }
@@ -32,7 +32,7 @@ function validateCardNumber() {
   const cardNumber = numberClient.value.trim().replace(/\s/g, "");
   if (cardNumber === "") {
     error[1].classList.add("error");
-    error[1].innerText = "Can't be blank";
+    error[1].innerText = "Type a valid value";
     numberClient.style.border = "1px solid red";
     return false;
   }
@@ -45,13 +45,14 @@ function validateCardNumber() {
 function validateExpirationDate() {
   const month = monthVenc.value.trim();
   const year = yearVenc.value.trim();
-  if (month === "" || year === "") {
+  if (month === "" || year === "" || month < 1 || month > 12 || year < 23) {
     error[2].classList.add("error");
-    error[2].innerText = "Can't be blank";
+    error[2].innerText = "Type a valid value";
     monthVenc.style.border = "1px solid red";
     yearVenc.style.border = "1px solid red";
     return false;
   }
+
   error[2].classList.remove("error");
   error[2].innerText = "";
   monthVenc.style.border = "";
@@ -63,7 +64,7 @@ function validateCVC() {
   const cvcValue = cvc.value.trim();
   if (cvcValue === "" || cvcValue.length !== 3 || !/^\d+$/.test(cvcValue)) {
     error[3].classList.add("error");
-    error[3].innerText = "Invalid CVC";
+    error[3].innerText = "Type a valid value";
     cvc.style.border = "1px solid red";
     return false;
   }
