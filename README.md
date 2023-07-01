@@ -14,15 +14,15 @@ Projeto realizado com o objetivo de criar um fomulário de preenchimento de cart
 - Validação de Formulário
 - Espelho de informações
 
-## ✍️ Processo
+### ✍️ Validações
 
-- Input de titular do cartão permite somente entrada letras;
-- Input de número do cartão permite somente entrada de número, limitado a 16 dígitos e separado em grupos de 4 números;
-- input de mês permite somente entrada de número, limitado a 2 dígitos, sendo eles entre 1 e 12;
-- input de ano permite somente entrada de número, limitado a 2 dígitos, sendo eles acima do ano atual;
-- Input de CVC input de ano permite somente entrada de número, limitado a 3 dígitos;
+- Input de titular do cartão permite somente entrada de letras;
+- Input de número do cartão permite somente entrada de números, limitado a 16 dígitos e separados em grupos de 4 números;
+- Input de mês permite somente entrada de números, limitado a 2 dígitos, sendo eles entre 1 e 12;
+- Input de ano permite somente entrada de números, limitado a 2 dígitos, sendo eles acima do ano atual;
+- Input de CVC permite somente entrada de números, limitado a 3 dígitos;
 - Todos os input's são validados para não enviar se estiverem vazios e todos estouram uma mensagem de erro caso não esteja entre as validações exigidas;
-- Todos os input's espelham as informações simultaneamente com o desenho do cartão de crédito que simula o real.
+- Todos os input's espelham as informações simultaneamente para o desenho do cartão de crédito que simula o real.
 
 ## 🖱️ A página
 
