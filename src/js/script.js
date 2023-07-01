@@ -45,7 +45,9 @@ function validateCardNumber() {
 function validateExpirationDate() {
   const month = monthVenc.value.trim();
   const year = yearVenc.value.trim();
-  if (month === "" || year === "" || month < 1 || month > 12 || year < 23) {
+  const dataAtual = new Date();
+  const anoAtual = dataAtual.getFullYear() % 100;
+  if (month === "" || year === "" || month < 1 || month > 12 || year <= anoAtual) {
     error[2].classList.add("error");
     error[2].innerText = "Type a valid value";
     monthVenc.style.border = "1px solid red";
