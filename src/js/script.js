@@ -168,11 +168,9 @@ yearVenc.addEventListener("input", handleYearInput);
 cvc.addEventListener("input", () => {
   const cvcValue = cvc.value;
   numberCvc.innerText = cvcValue.slice(0, 3);
-});
-
-cvc.addEventListener("input", () => {
-  const cvcValue = cvc.value;
   if (cvcValue.length > 3) {
     cvc.value = cvcValue.slice(0, 3);
   }
 });
+
+
