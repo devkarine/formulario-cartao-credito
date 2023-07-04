@@ -35,6 +35,7 @@
             <label for="name">CARDHOLDER NAME</label>
             <input
               type="text"
+              maxlength="30"
               name="name"
               id="name"
               placeholder="e.g. Jane Applessed"
@@ -57,15 +58,22 @@
             <div class="venc">
               <label for="venc">EXP. DATE (MM/YY)</label>
               <div class="month-year">
-                <input type="text" name="month" id="month" placeholder="MM" min="1" max="12"/>
-                <input type="text" name="year" id="year" placeholder="YY" />
+                <input
+                  type="text"
+                  name="month"
+                  id="month"
+                  placeholder="00"
+                  min="1"
+                  max="12"
+                />
+                <input type="text" name="year" id="year" placeholder="00" />
               </div>
               <small>Error</small>
             </div>
             <div class="cvc">
               <label for="cvc">CVC</label>
 
-              <input type="text" name="cvc" id="cvc" placeholder="cvc" />
+              <input type="text" name="cvc" id="cvc" placeholder="000" />
               <small>Error</small>
             </div>
           </div>

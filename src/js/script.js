@@ -22,6 +22,7 @@ function validateName() {
     nameClient.style.border = "1px solid red";
     return false;
   }
+
   error[0].classList.remove("error");
   error[0].innerText = "";
   nameClient.style.border = "";
@@ -47,7 +48,13 @@ function validateExpirationDate() {
   const year = yearVenc.value.trim();
   const dataAtual = new Date();
   const anoAtual = dataAtual.getFullYear() % 100;
-  if (month === "" || year === "" || month < 1 || month > 12 || year <= anoAtual) {
+  if (
+    month === "" ||
+    year === "" ||
+    month < 1 ||
+    month > 12 ||
+    year < anoAtual
+  ) {
     error[2].classList.add("error");
     error[2].innerText = "Type a valid value";
     monthVenc.style.border = "1px solid red";
@@ -172,5 +179,3 @@ cvc.addEventListener("input", () => {
     cvc.value = cvcValue.slice(0, 3);
   }
 });
-
-
