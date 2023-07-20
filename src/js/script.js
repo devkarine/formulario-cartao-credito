@@ -1,19 +1,7 @@
-const nameCard = document.getElementById("card-name");
-const numberCard = document.getElementById("card-number");
-const dataVenc = document.getElementById("card-expiration");
-const numberCvc = document.getElementById("card-cvc");
-const nameClient = document.getElementById("name");
-const numberClient = document.getElementById("number");
-const monthVenc = document.getElementById("month");
-const yearVenc = document.getElementById("year");
-const cvc = document.getElementById("cvc");
-const btnConfirm = document.getElementById("btn-confirm");
-const btnContinue = document.getElementById("btn-continue");
 const error = document.querySelectorAll("small");
 const input = document.querySelectorAll("input");
-const form = document.getElementById("form");
-const thanks = document.getElementById("thanks");
 
+const nameClient = document.getElementById("name");
 function validateName() {
   const name = nameClient.value.trim();
   if (name === "") {
@@ -29,6 +17,7 @@ function validateName() {
   return true;
 }
 
+const numberClient = document.getElementById("number");
 function validateCardNumber() {
   const cardNumber = numberClient.value.trim().replace(/\s/g, "");
   if (cardNumber === "") {
@@ -43,6 +32,8 @@ function validateCardNumber() {
   return true;
 }
 
+const monthVenc = document.getElementById("month");
+const yearVenc = document.getElementById("year");
 function validateExpirationDate() {
   const month = monthVenc.value.trim();
   const year = yearVenc.value.trim();
@@ -69,6 +60,7 @@ function validateExpirationDate() {
   return true;
 }
 
+const cvc = document.getElementById("cvc");
 function validateCVC() {
   const cvcValue = cvc.value.trim();
   if (cvcValue === "" || cvcValue.length !== 3 || !/^\d+$/.test(cvcValue)) {
@@ -83,6 +75,8 @@ function validateCVC() {
   return true;
 }
 
+const form = document.getElementById("form");
+const thanks = document.getElementById("thanks");
 function validateForm(event) {
   event.preventDefault();
 
@@ -97,19 +91,23 @@ function validateForm(event) {
   }
 }
 
+const btnConfirm = document.getElementById("btn-confirm");
 btnConfirm.addEventListener("click", validateForm);
 
+const btnContinue = document.getElementById("btn-continue");
 btnContinue.addEventListener("click", (event) => {
   event.preventDefault();
   thanks.classList.add("visibility");
   form.classList.remove("visibility");
 });
 
+const nameCard = document.getElementById("card-name");
 nameClient.addEventListener("input", () => {
   const nameClientValue = nameClient.value;
   nameCard.innerText = nameClientValue;
 });
 
+const numberCard = document.getElementById("card-number");
 numberClient.addEventListener("input", () => {
   const numberClientValue = numberClient.value;
   numberCard.innerText = numberClientValue;
@@ -132,6 +130,7 @@ function limitCardNumber() {
     formattedNumber !== "" ? formattedNumber : "0000 0000 0000 0000";
 }
 
+const dataVenc = document.getElementById("card-expiration");
 function insertDataVenc() {
   const yearVencValue = yearVenc.value;
   const monthVencValue = monthVenc.value;
@@ -172,6 +171,7 @@ yearVenc.addEventListener("input", insertDataVenc);
 monthVenc.addEventListener("input", handleMonthInput);
 yearVenc.addEventListener("input", handleYearInput);
 
+const numberCvc = document.getElementById("card-cvc");
 cvc.addEventListener("input", () => {
   const cvcValue = cvc.value;
   numberCvc.innerText = cvcValue.slice(0, 3);
